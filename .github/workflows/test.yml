@@ -34,7 +34,7 @@ jobs:
         env:
           REPORT: 'test-results/report.json'
           PROC: 'auto'
-          TESTOMATIO: ${{ secrets.TESTOMATIO_API_KEY }}
+          TESTOMATIO: '${{ secrets.TESTOMATIO_API_KEY }}'
           TESTOMATIO_CODE_STYLE: 'pep8'
 
       - name: Generate Pretty Report
